@@ -1,0 +1,51 @@
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #252525;
+    --text-primary: #ffffff;
+    --accent-color: #7c3aed;
+    --danger-color: #ef4444;
+    --success-color: #22c55e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+input {
+    font-family: "Poppins", sans-serif;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--accent-color);
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
